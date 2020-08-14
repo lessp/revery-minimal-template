@@ -1,0 +1,54 @@
+{
+  "name": "revery-minimal-template",
+  "version": "0.1.0",
+  "description": "A minimal template for getting started with Revery",
+  "license": "MIT",
+  "scripts": {
+    "format": "bash -c \"refmt --in-place **/*.re\"",
+    "run": "esy x App"
+  },
+  "esy": {
+    "build": "dune build -p App",
+    "buildDev": "refmterr dune build -p App",
+    "buildsInSource": "_build"
+  },
+  "revery-packager": {
+    "bundleName": "ExampleApp",
+    "bundleId": "com.example.app",
+    "displayName": "Revery Example App",
+    "mainExecutable": "App",
+    "windows": {
+      "packages": [
+        "zip"
+      ],
+      "iconFile": "assets/icon.ico"
+    },
+    "darwin": {
+      "packages": [
+        "tar",
+        "dmg"
+      ],
+      "iconFile": "assets/icon.icns"
+    },
+    "linux": {
+      "packages": [
+        "tar",
+        "appimage"
+      ]
+    }
+  },
+  "dependencies": {
+    "@esy-ocaml/reason": "^3.6.0",
+    "@glennsl/timber": "^1.2.0",
+    "@opam/dune": "^2.5.0",
+    "@opam/tablecloth-native": "0.0.7",
+    "esy-macdylibbundler": "*",
+    "refmterr": "*",
+    "revery": "revery-ui/revery"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+    "ocaml": "~4.10.0"
+  }
+}
+
