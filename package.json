@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "format": "bash -c \"refmt --in-place **/*.re\"",
-    "run": "esy x App"
+    "start": "esy x App"
   },
   "esy": {
     "build": "dune build -p App",
