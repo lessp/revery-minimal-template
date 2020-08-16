@@ -30,7 +30,7 @@ Once built, the application binary will be in the `_build/install/default/bin` -
 
 or using esy with the script specified in [package.json](package.json#L8):
 
-- `esy run`
+- `esy start`
 
 ## What are all these files?
 
