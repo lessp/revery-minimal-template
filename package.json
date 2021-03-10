@@ -39,10 +39,11 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "@glennsl/timber": "^1.2.0",
     "@opam/dune": "^2.5.0",
     "@opam/tablecloth-native": "0.0.7",
+    "@revery/timber": "*",
     "esy-macdylibbundler": "*",
+    "esy-python": "esy-packages/esy-python",
     "refmterr": "*",
     "revery": "revery-ui/revery"
   },
