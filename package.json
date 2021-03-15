@@ -17,33 +17,22 @@
     "bundleId": "com.example.app",
     "displayName": "Revery Example App",
     "mainExecutable": "App",
-    "windows": {
-      "packages": [
-        "zip"
-      ],
-      "iconFile": "assets/icon.ico"
-    },
+    "windows": { "packages": [ "zip" ], "iconFile": "assets/icon.ico" },
     "darwin": {
-      "packages": [
-        "tar",
-        "dmg"
-      ],
+      "packages": [ "tar", "dmg" ],
       "iconFile": "assets/icon.icns"
     },
-    "linux": {
-      "packages": [
-        "tar",
-        "appimage"
-      ]
-    }
+    "linux": { "packages": [ "tar", "appimage" ] }
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
     "@opam/dune": "^2.5.0",
     "@opam/tablecloth-native": "0.0.7",
+    "@reason-native/console": "^0.1.0",
     "@revery/timber": "*",
     "esy-macdylibbundler": "*",
     "esy-python": "esy-packages/esy-python",
+    "fetch-native-lwt": "0.1.0-alpha.5",
     "refmterr": "*",
     "revery": "revery-ui/revery"
   },
